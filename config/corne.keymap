@@ -34,7 +34,7 @@
 
             label = "Base";
             bindings = <
-&trans  &kp Q            &kp W        &kp F          &kp P         &kp B         &kp J      &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &trans
+&mo 1   &kp Q            &kp W        &kp F          &kp P         &kp B         &kp J      &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
 &trans  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S   &htc LSHFT T  &kp G         &kp M      &htc RSHFT N     &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
 &trans  &kp Z            &kp X        &kp C          &kp D         &kp V         &kp K      &kp H            &kp COMMA     &kp DOT      &kp FSLH          &trans
                                       &lt 11 ESCAPE  &lt 9 SPACE   &lt 10 TAB    &lt 8 RET  &lt 5 BACKSPACE  &lt 12 DEL
@@ -50,7 +50,7 @@
 
             label = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&kp TAB     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
                                         &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
