@@ -144,10 +144,10 @@
 
         Coding_Layer {
             bindings = <
-&trans  &kp BSLH  &kp LEFT_BRACE   &kp LBKT           &kp LEFT_PARENTHESIS   &kp LESS_THAN       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FSLH  &kp RIGHT_BRACE  &kp RBKT           &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp AT    &kp APOS         &kp DOUBLE_QUOTES  &kp SEMI               &trans              &trans  &trans  &trans  &trans  &trans  &trans
-                                   &kp ESCAPE         &kp SPACE              &kp TAB             &trans  &trans  &trans
+&trans  &kp AT         &kp APOSTROPHE   &kp DOUBLE_QUOTES  &kp SEMICOLON          &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp FSLH       &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LPAR               &kp LT              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &kp ESCAPE         &kp SPACE              &kp TAB             &trans  &trans  &trans
             >;
 
             label = "Coding";
