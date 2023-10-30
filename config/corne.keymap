@@ -144,7 +144,7 @@
 
         Coding_Layer {
             bindings = <
-&trans  &kp AT         &kp APOSTROPHE   &kp DOUBLE_QUOTES  &kp SEMICOLON          &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp AT         &kp APOSTROPHE   &kp DOUBLE_QUOTES  &kp SEMICOLON          &kp COLON           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp FSLH       &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LPAR               &kp LT              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans  &trans  &trans  &trans  &trans  &trans
                                         &kp ESCAPE         &kp SPACE              &kp TAB             &trans  &trans  &trans
@@ -177,10 +177,10 @@
 
         Functions_Layer {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &kp PRINTSCREEN  &kp F12  &kp F7  &kp F8  &kp F9  &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &kp SCROLLLOCK   &kp F11  &kp F4  &kp F5  &kp F6  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &kp PAUSE_BREAK  &kp F10  &kp F1  &kp F2  &kp F3  &trans
-                         &trans  &trans  &trans             &trans           &trans   &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12  &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &kp SCROLLLOCK   &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                         &trans  &trans  &trans             &trans           &trans  &trans
             >;
 
             label = "Functions";
