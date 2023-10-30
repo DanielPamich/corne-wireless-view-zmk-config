@@ -120,6 +120,8 @@
 &trans  &kp LC(Y)      &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(Z)     &trans  &trans  &trans  &trans  &trans  &trans
                                        &trans          &kp SPACE        &kp TAB       &trans  &trans  &trans
             >;
+
+            label = "Navigation";
         };
 
         layer_6 {
@@ -147,33 +149,41 @@
 &trans  &kp AT    &kp APOS         &kp DOUBLE_QUOTES  &kp SEMI               &trans              &trans  &trans  &trans  &trans  &trans  &trans
                                    &kp ESCAPE         &kp SPACE              &kp TAB             &trans  &trans  &trans
             >;
+
+            label = "Coding";
         };
 
         Num_Layer {
             bindings = <
-&trans  &kp PLUS         &kp N7  &kp N8  &kp N9  &kp FSLH     &trans     &trans         &trans      &trans  &trans  &trans
-&trans  &kp MINUS        &kp N4  &kp N5  &kp N6  &kp EQUAL    &trans     &trans         &trans      &trans  &trans  &trans
-&trans  &kp KP_MULTIPLY  &kp N1  &kp N2  &kp N3  &kp BSLH     &trans     &trans         &trans      &trans  &trans  &trans
-                                 &trans  &trans  &trans       &kp ENTER  &kp BACKSPACE  &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS      &kp N7         &kp N8      &kp N9  &kp FSLH         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp N4         &kp N5      &kp N6  &kp KP_MULTIPLY  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_EQUAL  &kp N1         &kp N2      &kp N3  &kp BSLH         &trans
+                        &trans  &trans  &trans    &kp N0        &kp BACKSPACE  &kp PERIOD
             >;
+
+            label = "Numbers";
         };
 
         Symbols_Layer {
             bindings = <
-&trans  &kp GRAVE  &kp AMPS         &kp STAR     &kp LS(LA(N4))  &kp UNDER    &trans     &trans         &trans      &trans  &trans  &trans
-&trans  &kp COLON  &kp DOLLAR       &kp PERCENT  &kp CARET       &kp PLUS     &trans     &trans         &trans      &trans  &trans  &trans
-&trans  &kp TILDE  &kp EXCLAMATION  &kp AT       &kp HASH        &kp PIPE     &trans     &trans         &trans      &trans  &trans  &trans
-                                    &trans       &trans          &trans       &kp ENTER  &kp BACKSPACE  &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp GRAVE  &kp AMPS    &kp STAR     &kp LS(LA(NUMBER_4))  &kp UNDER  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp COLON  &kp DOLLAR  &kp PERCENT  &kp CARET             &kp PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp TILDE  &kp EXCL    &kp AT       &kp HASH              &kp PIPE   &trans
+                        &trans  &trans  &trans    &kp ENTER  &kp BSPC    &kp DELETE
             >;
+
+            label = "Symbols";
         };
 
-        Funtions_Layer {
+        Functions_Layer {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans             &trans  &trans  &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &kp PRINTSCREEN  &kp F12  &kp F7  &kp F8  &kp F9  &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &kp SCROLLLOCK   &kp F11  &kp F4  &kp F5  &kp F6  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &kp PAUSE_BREAK  &kp F10  &kp F1  &kp F2  &kp F3  &trans
+                         &trans  &trans  &trans             &trans           &trans   &trans
             >;
+
+            label = "Functions";
         };
 
         Macros {
@@ -183,6 +193,8 @@
 &trans  &kp LA(GRAVE)    &kp LC(DOT)  &kp LA(BSLH)  &kp LC(T)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                       &trans        &trans     &trans    &trans  &trans  &trans
             >;
+
+            label = "Macros";
         };
 
         layer_13 {
