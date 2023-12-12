@@ -30,12 +30,14 @@
             bindings = <&kt LS(LA(LC(Q)))>;
             label = "COPYQ";
         };
+
         powerrun: powerrun {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LS(LA(LC(P)))>;
             label = "POWERRUN";
         };
+
         listary: listary {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -56,10 +58,10 @@
 
             label = "Base";
             bindings = <
-&mo 1   &kp Q            &kp W        &kp F          &kp P         &kp B         &kp J      &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
-&trans  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S   &htc LSHFT T  &kp G         &kp M      &htc RSHFT N     &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
-&trans  &kp Z            &kp X        &kp C          &kp D         &kp V         &kp K      &kp H            &kp COMMA     &kp DOT      &kp FSLH          &trans
-                                      &lt 11 ESCAPE  &lt 9 SPACE   &lt 10 TAB    &lt 8 RET  &lt 5 BACKSPACE  &lt 12 DEL
+&mo 1   &kp Q            &kp W        &kp F         &kp P         &kp B        &kp J      &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
+&trans  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S  &htc LSHFT T  &kp G        &kp M      &htc RSHFT N     &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
+&trans  &kp Z            &kp X        &kp C         &kp D         &kp V        &kp K      &kp H            &kp COMMA     &kp DOT      &kp FSLH          &trans
+                                      &lt 7 ESCAPE  &lt 5 SPACE   &lt 6 TAB    &lt 4 RET  &lt 3 BACKSPACE  &lt 8 DEL
             >;
         };
 
@@ -95,24 +97,6 @@
             >;
         };
 
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
         Nav_Layer {
             bindings = <
 &trans  &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT    &trans  &trans  &trans  &trans  &trans  &trans
@@ -122,24 +106,6 @@
             >;
 
             label = "Navigation";
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
         };
 
         Coding_Layer {
@@ -195,15 +161,6 @@
             >;
 
             label = "Macros";
-        };
-
-        layer_13 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
         };
     };
 };
