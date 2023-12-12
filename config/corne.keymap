@@ -61,7 +61,7 @@
 &mo 1   &kp Q            &kp W        &kp F         &kp P         &kp B        &kp J      &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
 &trans  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S  &htc LSHFT T  &kp G        &kp M      &htc RSHFT N     &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
 &trans  &kp Z            &kp X        &kp C         &kp D         &kp V        &kp K      &kp H            &kp COMMA     &kp DOT      &kp FSLH          &trans
-                                      &lt 7 ESCAPE  &lt 5 SPACE   &lt 6 TAB    &lt 4 RET  &lt 3 BACKSPACE  &lt 8 DEL
+                                      &lt 8 ESCAPE  &lt 6 SPACE   &lt 7 TAB    &lt 5 RET  &lt 4 BACKSPACE  &lt 9 DEL
             >;
         };
 
@@ -94,6 +94,15 @@
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -161,6 +170,15 @@
             >;
 
             label = "Macros";
+        };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
