@@ -70,7 +70,7 @@
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            label = "Base";
+            label = "UK";
             bindings = <
 &mo 1  &kp Q            &kp W        &kp F          &kp P         &kp B         &kp J       &kp L             &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
 &to 2  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S   &htc LSHFT T  &kp G         &kp M       &htc RSHFT N      &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
