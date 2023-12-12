@@ -44,6 +44,20 @@
             bindings = <&kp LS(LA(LC(L)))>;
             label = "LISTARY";
         };
+
+        backslash: backslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(BACKSLASH)>;
+            label = "BACKSLASH";
+        };
+
+        pipe: pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(LS(BACKSLASH))>;
+            label = "PIPE";
+        };
     };
 
     keymap {
@@ -58,10 +72,10 @@
 
             label = "Base";
             bindings = <
-&mo 1   &kp Q            &kp W        &kp F         &kp P         &kp B        &kp J      &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
-&trans  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S  &htc LSHFT T  &kp G        &kp M      &htc RSHFT N     &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
-&trans  &kp Z            &kp X        &kp C         &kp D         &kp V        &kp K      &kp H            &kp COMMA     &kp DOT      &kp FSLH          &trans
-                                      &lt 8 ESCAPE  &lt 6 SPACE   &lt 7 TAB    &lt 5 RET  &lt 4 BACKSPACE  &lt 9 DEL
+&mo 1  &kp Q            &kp W        &kp F          &kp P         &kp B         &kp J       &kp L             &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
+&to 2  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S   &htc LSHFT T  &kp G         &kp M       &htc RSHFT N      &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
+&to 0  &kp Z            &kp X        &kp C          &kp D         &kp V         &kp K       &kp H             &kp COMMA     &kp DOT      &kp FSLH          &trans
+                                     &lt 14 ESCAPE  &lt 12 SPACE  &lt 13 TAB    &lt 11 RET  &lt 10 BACKSPACE  &lt 15 DEL
             >;
         };
 
@@ -90,14 +104,14 @@
 
             label = "US_layer";
             bindings = <
-&mo 1   &kp Q            &kp W        &kp F         &kp P         &kp B        &kp J      &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
-&trans  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S  &htc LSHFT T  &kp G        &kp M      &htc RSHFT N     &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
-&trans  &kp Z            &kp X        &kp C         &kp D         &kp V        &kp K      &kp H            &kp COMMA     &kp DOT      &kp FSLH          &trans
-                                      &lt 8 ESCAPE  &lt 6 SPACE   &lt 7 TAB    &lt 5 RET  &lt 4 BACKSPACE  &lt 9 DEL
+&mo 1  &kp Q            &kp W        &kp F         &kp P         &kp B        &kp J      &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
+&to 3  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S  &htc LSHFT T  &kp G        &kp M      &htc RSHFT N     &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
+&to 0  &kp Z            &kp X        &kp C         &kp D         &kp V        &kp K      &kp H            &kp COMMA     &kp DOT      &kp FSLH          &trans
+                                     &lt 8 ESCAPE  &lt 6 SPACE   &lt 7 TAB    &lt 5 RET  &lt 4 BACKSPACE  &lt 9 DEL
             >;
         };
 
-       UK_layer {
+        UK_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -178,7 +192,8 @@
 
             label = "Macros";
         };
-  UK_Nav_Layer {
+
+        UK_Nav_Layer {
             bindings = <
 &trans  &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans  &trans  &trans  &trans  &trans  &trans
@@ -191,10 +206,10 @@
 
         UK_Coding_Layer {
             bindings = <
-&trans  &kp AT         &kp APOSTROPHE   &kp DOUBLE_QUOTES  &kp SEMICOLON          &kp COLON           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FSLH       &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LPAR               &kp LT              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans  &trans  &trans  &trans  &trans  &trans
-                                        &kp ESCAPE         &kp SPACE              &kp TAB             &trans  &trans  &trans
+&trans  &kp DOUBLE_QUOTES  &kp APOSTROPHE   &kp AT_SIGN        &kp SEMICOLON          &kp COLON           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp FSLH           &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LPAR               &kp LT              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &backslash         &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans  &trans  &trans  &trans  &trans  &trans
+                                            &kp ESCAPE         &kp SPACE              &kp TAB             &trans  &trans  &trans
             >;
 
             label = "UK_Coding";
@@ -202,20 +217,20 @@
 
         UK_Num_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS      &kp N7         &kp N8      &kp N9  &kp ASTRK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp N4         &kp N5      &kp N6  &kp SLASH  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_EQUAL  &kp N1         &kp N2      &kp N3  &kp BSLH   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS      &kp N7         &kp N8      &kp N9  &kp ASTRK   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp N4         &kp N5      &kp N6  &kp SLASH   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_EQUAL  &kp N1         &kp N2      &kp N3  &backslash  &trans
                         &trans  &trans  &trans    &kp N0        &kp BACKSPACE  &kp PERIOD
             >;
 
             label = "UK_Numbers";
         };
 
-    UK_Symbols_Layer {
+        UK_Symbols_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp GRAVE  &kp AMPS    &kp STAR     &kp LS(LA(NUMBER_4))  &kp UNDER  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp COLON  &kp DOLLAR  &kp PERCENT  &kp CARET             &kp PLUS   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp TILDE  &kp EXCL    &kp AT       &kp HASH              &kp PIPE   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp GRAVE  &kp AMPS    &kp STAR           &kp HASH       &kp UNDER  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp TILDE  &kp DOLLAR  &kp PERCENT        &kp CARET      &kp PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PIPE   &kp EXCL    &kp DOUBLE_QUOTES  &kp BACKSLASH  &pipe      &trans
                         &trans  &trans  &trans    &kp ENTER  &kp BSPC    &kp DELETE
             >;
 
@@ -243,6 +258,5 @@
 
             label = "UK_Macros";
         };
-
     };
 };
