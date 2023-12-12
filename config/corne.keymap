@@ -120,10 +120,10 @@
 
             label = "UK_layer";
             bindings = <
-&mo 1   &kp Q            &kp W        &kp F         &kp P         &kp B        &kp J      &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
-&trans  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S  &htc LSHFT T  &kp G        &kp M      &htc RSHFT N     &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
-&trans  &kp Z            &kp X        &kp C         &kp D         &kp V        &kp K      &kp H            &kp COMMA     &kp DOT      &kp FSLH          &trans
-                                      &lt 8 ESCAPE  &lt 6 SPACE   &lt 7 TAB    &lt 5 RET  &lt 4 BACKSPACE  &lt 9 DEL
+&mo 1  &kp Q            &kp W        &kp F         &kp P         &kp B        &kp J      &kp L            &kp U         &kp Y        &kp SINGLE_QUOTE  &to 0
+&to 2  &htc LEFT_WIN A  &htc LALT R  &htc LCTRL S  &htc LSHFT T  &kp G        &kp M      &htc RSHFT N     &htc RCTRL E  &htc RALT I  &htc RWIN O       &trans
+&to 0  &kp Z            &kp X        &kp C         &kp D         &kp V        &kp K      &kp H            &kp COMMA     &kp DOT      &kp FSLH          &trans
+                                     &lt 8 ESCAPE  &lt 6 SPACE   &lt 7 TAB    &lt 5 RET  &lt 4 BACKSPACE  &lt 9 DEL
             >;
         };
 
