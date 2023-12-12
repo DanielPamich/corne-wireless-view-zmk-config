@@ -178,7 +178,7 @@
 
             label = "Macros";
         };
-  Nav_Layer {
+  UK_Nav_Layer {
             bindings = <
 &trans  &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &trans  &trans  &trans  &trans  &trans  &trans
@@ -189,7 +189,7 @@
             label = "UK_Navigation";
         };
 
-        Coding_Layer {
+        UK_Coding_Layer {
             bindings = <
 &trans  &kp AT         &kp APOSTROPHE   &kp DOUBLE_QUOTES  &kp SEMICOLON          &kp COLON           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp FSLH       &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LPAR               &kp LT              &trans  &trans  &trans  &trans  &trans  &trans
@@ -200,7 +200,7 @@
             label = "UK_Coding";
         };
 
-        Num_Layer {
+        UK_Num_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS      &kp N7         &kp N8      &kp N9  &kp ASTRK  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp N4         &kp N5      &kp N6  &kp SLASH  &trans
@@ -211,7 +211,7 @@
             label = "UK_Numbers";
         };
 
-        Symbols_Layer {
+    UK_Symbols_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp GRAVE  &kp AMPS    &kp STAR     &kp LS(LA(NUMBER_4))  &kp UNDER  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp COLON  &kp DOLLAR  &kp PERCENT  &kp CARET             &kp PLUS   &trans
@@ -222,7 +222,7 @@
             label = "UK_Symbols";
         };
 
-        Functions_Layer {
+        UK_Functions_Layer {
             bindings = <
 &trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12  &trans
 &trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &kp SCROLLLOCK   &kp F4  &kp F5  &kp F6  &kp F11  &trans
@@ -233,7 +233,7 @@
             label = "UK_Functions";
         };
 
-        Macros {
+        UK_Macros {
             bindings = <
 &trans  &trans           &trans       &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp PRINTSCREEN  &powerrun    &copyq        &listary   &trans    &trans  &trans  &trans  &trans  &trans  &trans
