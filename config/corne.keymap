@@ -206,10 +206,10 @@
 
         UK_Coding_Layer {
             bindings = <
-&trans  &kp DOUBLE_QUOTES     &kp APOSTROPHE   &kp AT_SIGN        &kp SEMICOLON          &kp COLON           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FSLH              &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LPAR               &kp LT              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp NON_US_BACKSLASH  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans  &trans  &trans  &trans  &trans  &trans
-                                               &kp ESCAPE         &kp SPACE              &kp TAB             &trans  &trans  &trans
+&trans  &kp DOUBLE_QUOTES     &kp APOSTROPHE     &kp AT_SIGN      &kp SEMICOLON          &kp COLON           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp FSLH              &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LPAR               &kp LT              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NON_US_BACKSLASH  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN    &trans  &trans  &trans  &trans  &trans  &trans
+                                                 &kp ESCAPE       &kp SPACE              &kp TAB             &trans  &trans  &trans
             >;
 
             label = "UK_Coding";
