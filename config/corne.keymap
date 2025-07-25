@@ -62,8 +62,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            label = "default_layer";
+        mac_default_layer {
+            label = "mac_default_layer";
             bindings = <
 &mo 1  &kp Q         &kp W        &kp F            &kp P         &kp B        &kp J      &kp L            &kp U             &kp Y        &kp SINGLE_QUOTE  &mo 1
 &to 3  &htc LCTRL A  &htc LALT R  &htc LEFT_WIN S  &htc LSHFT T  &kp G        &kp M      &htc RSHFT N     &htc RIGHT_WIN E  &htc RALT I  &htc RCTRL O      &to 2
