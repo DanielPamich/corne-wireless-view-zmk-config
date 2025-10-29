@@ -267,7 +267,7 @@
             bindings = <
 &trans  &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp END          &kp PG_UP        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(Z)      &kp LC(X)       &kp LC(C)       &kp LC(V)        &kp LC(Y)        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)      &kp LG(X)       &kp LG(C)       &kp LG(V)        &kp LG(Y)        &trans  &trans  &trans  &trans  &trans  &trans
                                        &trans          &kp SPACE        &kp TAB          &trans  &trans  &trans
             >;
         };
