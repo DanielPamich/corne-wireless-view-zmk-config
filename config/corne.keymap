@@ -243,10 +243,10 @@
 
         UK_Macros {
             bindings = <
-&trans  &trans         &trans         &trans                    &trans                     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(LC(C))  &kp LG(SPACE)  &kp LG(LA(C))             &kp LG(LA(LS(LC(SPACE))))  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(GRAVE)  &kp LC(DOT)    &kp LA(NON_US_BACKSLASH)  &kp LC(T)                  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans                    &trans                     &trans    &trans  &trans  &trans
+&trans  &kp LS(F5)     &kp F5         &kp F10                   &kp F11                    &kp RS(F11)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LC(C))  &kp LG(SPACE)  &kp LG(LA(C))             &kp LG(LA(LS(LC(SPACE))))  &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(GRAVE)  &kp LC(DOT)    &kp LA(NON_US_BACKSLASH)  &kp LC(T)                  &trans         &trans  &trans  &trans  &trans  &trans  &trans
+                                      &trans                    &trans                     &trans         &trans  &trans  &trans
             >;
 
             label = "UK_Macros";
